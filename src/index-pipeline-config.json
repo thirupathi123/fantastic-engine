@@ -1,0 +1,78 @@
+[
+	{
+		"_id": "stage unique id",
+		"name":"stage name",
+		"type": "field_mapping",
+		"condition": "",
+		"config": {
+			"target_field": "targetFeildName",
+			"operation": "remove"
+		}
+	},
+	{
+		"_id": "stage unique id",
+		"type": "field_mapping",
+		"name": "stage name",
+		"condition": "",
+		"config": {
+			"value": "a static value",
+			"target_field": "targetFeildName",
+			"operation": "set"
+		}
+	},
+	{
+		"_id": "stage unique id",
+		"type": "field_mapping",
+		"name": "stage name",
+		"condition": "",
+		"config": {
+			"value": "${fieldName}",
+			"target_field": "targetFeildName",
+			"operation": "set"
+		}
+	},
+	{
+		"_id": "stage unique id",
+		"type": "field_mapping",
+		"name": "stage name",
+		"condition": "",
+		"config": {
+			"value": "newFieldName",
+			"target_field": "targetFeildName",
+			"operation": "rename"
+		}
+	},
+	{
+		"_id": "stage unique id",
+		"type": "entity_extraction",
+		"name": "stage name",
+		"condition": "",
+		"config": {
+			"source_field": "sourceFieldName",
+			"target_field": "targetFeildName",
+			"entity_types":["city","country","currency"]
+		}
+	},
+	{
+		"_id": "stage unique id",
+		"type": "traits_extraction",
+		"name": "stage name",
+		"condition": "",
+		"config": {
+			"source_field": "sourceFieldName",
+			"target_field": "targetFeildName",
+			"trait_groups":["sentiment", "reportissue"]
+		}
+	},
+	{
+		"_id": "stage unique id",
+		"type": "keyword_extraction",
+		"name": "stage name",
+		"condition": "",
+		"config": {
+			"source_field": "sourceFieldName",
+			"target_field": "targetFeildName"
+		}
+	}
+
+]
